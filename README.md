@@ -3,8 +3,6 @@ README
 
 This is an example of how you can include a .css file as a global style in a next.js webapp.
 
-![example](example.gif)
-
 ### Running
 
 To get this example running you just need to
@@ -14,6 +12,7 @@ To get this example running you just need to
 
 Visit [http://localhost:300](http://localhost:300) and try to modify `pages/style.css` changing color. Your changes should be picked up instantly.
 
+![example](example.gif)
 
 ### Explanation
 
