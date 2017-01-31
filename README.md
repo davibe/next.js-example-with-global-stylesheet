@@ -19,8 +19,8 @@ Visit [http://localhost:300](http://localhost:300) and try to modify `pages/styl
 The strategy here is to transpile the css file to a css-in-js file so that it can be loaded and hot reloaded both on the server and the client. For this purpose i created a babel loader plugin called [babel-loader-wrap-in-js](https://github.com/davibe/babel-plugin-wrap-in-js)
 
 This project shows how you can set it up. Have a look at
-- `.babelrc`
-- `next.config.js`
+- .babelrc
+- next.config.js
 - pages/style.css
 - pages/index.js
 
