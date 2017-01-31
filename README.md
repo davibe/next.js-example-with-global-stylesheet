@@ -1,7 +1,7 @@
 README
 ------
 
-This is an example of how you can include a .css file as a global style in a next.js webapp.
+This is an example of how you can include a global stylesheet in a next.js webapp.
 
 ### Running
 
@@ -23,7 +23,3 @@ This project shows how you can set it up. Have a look at
 - next.config.js
 - pages/style.css
 - pages/index.js
-
-Note:
-
-I am still working in polishing up `babel-plugin-wrap-in-js` then maybe later i will take a look how to load sass/less and others
