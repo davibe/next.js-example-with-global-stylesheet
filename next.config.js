@@ -2,7 +2,7 @@ module.exports = {
   webpack: (config, { dev }) => {
     config.module.rules.push(
       {
-        test: /\.css/,
+        test: /\.(css|scss)/,
         loader: "emit-file-loader",
         options: {
           name: 'dist/[path][name].[ext]'
@@ -10,11 +10,15 @@ module.exports = {
       }
     ,
       {
-        test: /\.css/,
+        test: /\.css$/,
         loader: "babel-loader!raw-loader"
       }
+    ,
+      {
+        test: /\.scss$/,
+        loader: "babel-loader!raw-loader!sass-loader"
+      }
     )
-    // console.log(config.module.rules)
     return config
   }
 }
