@@ -3,6 +3,7 @@ README
 
 This is an example of how you can include a .css file as a global style in a next.js webapp.
 
+![example](example.gif)
 
 ### Running
 
