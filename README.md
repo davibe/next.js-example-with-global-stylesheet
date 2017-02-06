@@ -24,3 +24,8 @@ This project shows how you can set it up. Have a look at
 - next.config.js
 - pages/style.scss
 - pages/index.js
+
+
+
+Please, report any issue on enhancement related to this example to its original
+github repository https://github.com/davibe/next.js-css-global-style-test
