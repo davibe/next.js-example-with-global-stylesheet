@@ -3,7 +3,7 @@ module.exports = {
     config.module.rules.push(
       {
         test: /\.(css|scss)/,
-        loader: "emit-file-loader",
+        loader: 'emit-file-loader',
         options: {
           name: 'dist/[path][name].[ext]'
         }
@@ -11,12 +11,12 @@ module.exports = {
     ,
       {
         test: /\.css$/,
-        loader: "babel-loader!raw-loader"
+        loader: 'babel-loader!raw-loader'
       }
     ,
       {
         test: /\.scss$/,
-        loader: "babel-loader!raw-loader!sass-loader"
+        loader: 'babel-loader!raw-loader!sass-loader'
       }
     )
     return config

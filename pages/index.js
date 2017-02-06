@@ -1,5 +1,4 @@
 import React from 'react'
-import fetch from 'isomorphic-fetch'
 
 import style from './style.scss'
 // or, if you work with plain css
