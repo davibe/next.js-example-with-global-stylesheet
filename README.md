@@ -41,4 +41,4 @@ This project shows how you can set it up. Have a look at
 
 
 Please, report any issue on enhancement related to this example to its original
-github repository https://github.com/davibe/next.js-css-global-style-test
+github repository https://github.com/davibe/next.js-example-with-global-stylesheet
