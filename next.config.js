@@ -1,5 +1,14 @@
+const path = require('path')
+const glob = require('glob')
+
 module.exports = {
   webpack: (config, { dev }) => {
+    console.log(['styles', 'node_modules']
+      .map((d) => path.join(__dirname, d))
+      .map((g) => glob.sync(g))
+      .reduce((a, c) => a.concat(c), [])
+    )
+
     config.module.rules.push(
       {
         test: /\.(css|scss)/,
@@ -11,12 +20,21 @@ module.exports = {
     ,
       {
         test: /\.css$/,
-        loader: 'babel-loader!raw-loader'
+        use: ['babel-loader', 'raw-loader', 'postcss-loader']
       }
     ,
       {
-        test: /\.scss$/,
-        loader: 'babel-loader!raw-loader!sass-loader'
+        test: /\.s(a|c)ss$/,
+        use: ['babel-loader', 'raw-loader', 'postcss-loader',
+          { loader: 'sass-loader',
+            options: {
+              includePaths: ['styles', 'node_modules']
+                .map((d) => path.join(__dirname, d))
+                .map((g) => glob.sync(g))
+                .reduce((a, c) => a.concat(c), [])
+            }
+          }
+        ]
       }
     )
     return config
